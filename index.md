@@ -29,7 +29,9 @@ Also, the issue I was working on wasn't closed yet, since a lot of technical asp
 All in all, the Community Bonding Period was quite fun! I got to enjoy a bit of my post-exam “summer” break, and also spent some time coding.
 
 
-# <h1 align="center">It's Coding Time! </h1>
+<h1 align="center"> 
+# It's Coding Time! 
+</h1>
 
 
 # Chapter 2:
