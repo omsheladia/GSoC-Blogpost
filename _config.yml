@@ -1,1 +1,16 @@
 theme: jekyll-theme-cayman
+title: Om's GSoC 2022 Blogpost
+url: index.md
+description: This is my blog for Google Summer of Code, 2022 under the organisation libssh.
+plugins:
+  - jekyll-feed
+# Personal Info
+name: Om Sheladia
+email: omsheladiaa@gmail.com
+# Social Links
+github_username: omsheladia
+instagram_username: omsheladia
+linkedin_username: om-sheladia
+# About Section
+about_title: About Me
+about_profile_image:
