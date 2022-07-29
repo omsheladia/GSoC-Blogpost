@@ -1,7 +1,6 @@
-GSoC 2022 Blog
-This is my blog for Google Summer of Code, 2022 under the organisation libssh.
-The blog contains about all the contributions I made and the progress I made 
-in the course of time till the mid-evaluation i.e. 25th - 29th July 2022.
+# GSoC 2022 Blog
+
+## The blog contains about all the contributions I made and the progress I made in the course of time till the mid-evaluation i.e. 25th - 29th July 2022.
 
 # Chapter 0
 ### Pre-GSoC Phase
