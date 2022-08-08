@@ -35,8 +35,11 @@ It's Coding Time!
 
 
 # Chapter 2:
-So it was time to implement the flow which was discussed in the meetings during the Community Bonding Period which looked something like this:  
-(image here).  
+So it was time to implement the flow which was discussed in the meetings during the Community Bonding Period which looked something like this:   
+<p align="center">
+<img src = "https://user-images.githubusercontent.com/84867886/183337913-e63d5f42-b1e9-4a7d-a001-70c4a3350893.png" />
+</p>
+
 
 From the 2 available options, using existing 'SK' API and implementing something similar in libssh to avail the use of U2F/FIDO seemed feasible.
 I started exploring the openssh repository and sk-API in particular and tried to understand what I was getting into. I didn't make any haste while doing so and was thinking of ways in which I could implement all this using the libssh components.
@@ -75,7 +78,9 @@ But I had one thing which helped me win over the errors - the expertise of both 
 After replacing a few things, browsing through extensive code lines and putting some things here and there, I was successfully building the required target file.
 
 Here is the output of the progress:  
-(image). 
+<p align="center">
+<img src = "https://user-images.githubusercontent.com/84867886/183339500-a89c1387-bf15-4dea-b2a1-3a054e652d47.png" />
+</p> 
 
 I believe I could I have done a lot more in this span, but this is some great level of achievement for myself and has raised my confidence in a level I didn't imagine in the beginning of the project. 
 
