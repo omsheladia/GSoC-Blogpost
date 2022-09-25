@@ -14,3 +14,5 @@ linkedin_username: om-sheladia
 # About Section
 about_title: About Me
 about_profile_image:
+github:
+  is_project_page: false
