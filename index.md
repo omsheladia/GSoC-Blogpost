@@ -110,8 +110,8 @@ Now after this important part being achieved, I had to move on with the authenti
 Unfortunately I fell sick for a week which impacted my progress a lot.
 After getting a little better I started working again on the authentication part and I pushed some part. There were no errors thrown on my local system but that was not the case with the remote system.
 I was not sure about the part that I pushed and there was no way to test it. Yet I tried solving the pipeline errors thinking it might give away some clue to where I might be wrong. A lot of time was spent in this part yet I was trying my best till the end.
-By this time my number of commits had been increased very much. I squashed those commits and then again started to fix the pieline.
-After spending a lot of time I was able to fix pipeline, fixing 1 test part at a time.
+By this time my number of commits had been increased very much. I squashed those commits and then again started to fix the pipeline.
+After spending a lot of time I was able to fix pipeline, by fixing 1 test part of the pipeline at a time.
 Since at this point there were no errors, I created a merge request.
 
 # Chapter 7:
