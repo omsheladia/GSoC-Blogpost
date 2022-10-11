@@ -1,6 +1,6 @@
 # GSoC 2022 Blog
 
-## The blog contains about all the contributions I made and the progress I made in the course of time till the mid-evaluation i.e. 25th - 29th July 2022.
+## The blog contains about all the contributions I made and the progress I made in the course of time till the final-evaluation i.e. September 2022.
 
 # Chapter 0
 ### Pre-GSoC Phase
@@ -86,4 +86,40 @@ I believe I could I have done a lot more in this span, but this is some great le
 
 Here is the link to my forked repository where I am updating all my code: https://gitlab.com/omsheladia/libssh-mirror/-/tree/interface1
 
-Stay Tuned for the further part of this Blog and see you on the other side of my completed project.
+# Chapter 4:
+After being done with the blogpost I started interfacing the sk-usbhid.c and also gave a glimpse to some of the cryptographic resources shared by Anderson Sasaki. Ofcourse with the errors which were about to come with this file added, I luckily tackled them a bit quickly than before. 
+Now was the time to link this "libfido2" library with libssh.
+The library seemed to be properly linked on my local system whereas on the remote repository there were some errors in the pipeline.
+libssh also has one more repository named "[build-images](https://gitlab.com/libssh/build-images)" which is responsible for the building the images on the CI Pipeline.
+I started a merge request and added the steps to install the libfido2 library in various systems and the merge request was closed after a successful pipeline.
+
+# Chapter 5:
+Even though the build images was able to successfully install the libfido2 library, while building my repository there were still some errors due to the linking in Cmake.
+I made new Cmake modules for the libfido2 and also added a few things in the CMakeLists contained in various folders/sub-folders.
+No errors were being thrown on my local system but that was not the case on the remote system. This became really difficult to debug as I had to push something everytime I made some changes and had to wait for the CI to finish running the pipelines which took a lot of time.
+<p align="center">
+<img src ="https://www.incredibuild.com/wp-content/uploads/2022/03/C-Meme.png" height="300" width = "200">
+</p>
+
+After trying everything I could, I discussed it in the meeting and I was suggested to try one more thing.
+Trying that thing didn't work but making some few more changes in it and after giving my brain that hard time I was able to eliminate that linking error.
+This gave me a sense of relief that the libfido2 library was properly linked with the libssh.
+
+# Chapter 6:
+Now after this important part being achieved, I had to move on with the authentication part.
+Unfortunately I fell sick for a week which impacted my progress a lot.
+After getting a little better I started working again on the authentication part and I pushed some part. There were no errors thrown on my local system but that was not the case with the remote system.
+I was not sure about the part that I pushed and there was no way to test it. Yet I tried solving the pipeline errors thinking it might give away some clue to where I might be wrong. A lot of time was spent in this part yet I was trying my best till the end.
+By this time my number of commits had been increased very much. I squashed those commits and then again started to fix the pieline.
+After spending a lot of time I was able to fix pipeline, fixing 1 test part at a time.
+Since at this point there were no errors, I created a merge request.
+
+# Chapter 7:
+The authentication part I did earlier didn't seem right to me. So I scrapped that approach down and also fixed some part of the code on the review I received on the merge request.
+Since I was trying to use the sk API from OpenSSH, the difference in both of their API stood in my way.
+Even to add a single line I had to browse through hundreds of line just to ensure if I was doing it right. 
+I was caught in this loop where I was trying everything I could and there were no positive results and it felt like I made it worse.
+After all this endless trying, during my last meeting when my mentors had also lost the hope but I wanted to complete this project at any cost. They still gave me a chance till the evaluation.
+So in these last 3 days I pulled out 2 all nighters and came up with something better than the last work only problem was that it showed pipeline error in a testcase I created. 
+Though this was some of my best work I couldn't pass the evaluation.
+But as I had promised my mentors that I would complete this project irrespective of the evaluation, I have started working on it again and hope to give them a positive result in the weeks to come.
